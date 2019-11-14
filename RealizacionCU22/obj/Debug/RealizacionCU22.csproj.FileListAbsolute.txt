@@ -1,0 +1,12 @@
+d:\Desktop\Programación\RealizacionCU22\RealizacionCU22\bin\Debug\RealizacionCU22.exe.config
+d:\Desktop\Programación\RealizacionCU22\RealizacionCU22\bin\Debug\RealizacionCU22.exe
+d:\Desktop\Programación\RealizacionCU22\RealizacionCU22\bin\Debug\RealizacionCU22.pdb
+d:\Desktop\Programación\RealizacionCU22\RealizacionCU22\bin\Debug\MetroFramework.Design.dll
+d:\Desktop\Programación\RealizacionCU22\RealizacionCU22\bin\Debug\MetroFramework.dll
+d:\Desktop\Programación\RealizacionCU22\RealizacionCU22\bin\Debug\MetroFramework.Fonts.dll
+d:\Desktop\Programación\RealizacionCU22\RealizacionCU22\obj\Debug\RealizacionCU22.Properties.Resources.resources
+d:\Desktop\Programación\RealizacionCU22\RealizacionCU22\obj\Debug\RealizacionCU22.csproj.GenerateResource.Cache
+d:\Desktop\Programación\RealizacionCU22\RealizacionCU22\obj\Debug\RealizacionCU22.exe
+d:\Desktop\Programación\RealizacionCU22\RealizacionCU22\obj\Debug\RealizacionCU22.pdb
+d:\Desktop\Programación\RealizacionCU22\RealizacionCU22\obj\Debug\RealizacionCU22.csprojResolveAssemblyReference.cache
+d:\Desktop\Programación\RealizacionCU22\RealizacionCU22\obj\Debug\RealizacionCU22.mainPantallaResolucionSM.resources
