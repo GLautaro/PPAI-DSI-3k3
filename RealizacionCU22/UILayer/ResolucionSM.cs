@@ -26,15 +26,38 @@ namespace RealizacionCU22
         {
             if (this.txtNumeroSM.Text == "")
             {
-                MetroFramework.MetroMessageBox.Show(this, "Debe ingresar un Número de Solicitud de Mantenimiento", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning, 100);
+                MetroFramework.MetroMessageBox.Show(this, "Debe ingresar un Número de Solicitud de Mantenimiento", 
+                    "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning, 100);
                 this.tabsResultadoBusqueda.Visible = false;
             }
             else
             {
                 //Falta verificar que existe el num con la BD. (Solicitarle al gestor que busque)
-                MetroFramework.MetroMessageBox.Show(this, "Solicitud de mantenimiento encontrada", "Busqueda realizada", MessageBoxButtons.OK, MessageBoxIcon.Information, 100);
+                MetroFramework.MetroMessageBox.Show(this, "Solicitud de mantenimiento encontrada",
+                    "Busqueda realizada", MessageBoxButtons.OK, MessageBoxIcon.Question, 100);
+                //Mapear datos a la pantalla (a los labels)
                 this.tabsResultadoBusqueda.Visible = true;
+
             }
+        }
+
+        private void btnResolverSM_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = MetroFramework.MetroMessageBox.Show(this, "Esta seguro que desea confirmar la resolucion de la solicitud de mantenimiento", 
+                "Confirmar resolución", MessageBoxButtons.YesNo, MessageBoxIcon.Information, 100);
+            if(dialog == DialogResult.Yes){
+
+                //Pedir al gestor que dispare los mensajes para el cambio de estado.
+                this.tabsResultadoBusqueda.Visible = false;
+            }
+            
+        }
+
+        private void btnDatosTicket_Click(object sender, EventArgs e)
+        {
+            //Pedir al gestor que devuelva los datos de los tickets seleccionados. Luego mapearlos a la tabla o a una ListView.
+            tabsResultadoBusqueda.SelectedTab = tabTickets;
+
         }
     }
 }

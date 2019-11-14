@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainPantallaResolucionSM));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtNumeroSM = new MetroFramework.Controls.MetroTextBox();
             this.btnBuscarSM = new MetroFramework.Controls.MetroButton();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
@@ -42,48 +42,48 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabsResultadoBusqueda = new MetroFramework.Controls.MetroTabControl();
             this.tabSM = new MetroFramework.Controls.MetroTabPage();
-            this.tabPlan = new MetroFramework.Controls.MetroTabPage();
-            this.lblTitleNombreProyecto = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
-            this.tabTickets = new MetroFramework.Controls.MetroTabPage();
-            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
             this.btnResolverSM = new MetroFramework.Controls.MetroButton();
-            this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
-            this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.lblTitleNombreProyecto = new MetroFramework.Controls.MetroLabel();
+            this.tabPlan = new MetroFramework.Controls.MetroTabPage();
+            this.btnDatosTicket = new MetroFramework.Controls.MetroButton();
             this.gridTicketsPlan = new MetroFramework.Controls.MetroGrid();
             this.seleccionada = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tarea = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.miembro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horasConsumidas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnDatosTicket = new MetroFramework.Controls.MetroButton();
+            this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
+            this.tabTickets = new MetroFramework.Controls.MetroTabPage();
             this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
-            this.gridTicketsSeleccionados = new MetroFramework.Controls.MetroGrid();
-            this.idTicket = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaFinPrevista = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horasEstimadas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horasConsumidasTkt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.comentarios = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.horasConsumidasTkt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.horasEstimadas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaFinPrevista = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idTicket = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gridTicketsSeleccionados = new MetroFramework.Controls.MetroGrid();
             ((System.ComponentModel.ISupportInitialize)(this.imgPoloc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabsResultadoBusqueda.SuspendLayout();
             this.tabSM.SuspendLayout();
             this.tabPlan.SuspendLayout();
-            this.tabTickets.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridTicketsPlan)).BeginInit();
+            this.tabTickets.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridTicketsSeleccionados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -202,15 +202,138 @@
             this.tabSM.HorizontalScrollbarBarColor = true;
             this.tabSM.HorizontalScrollbarHighlightOnWheel = false;
             this.tabSM.HorizontalScrollbarSize = 10;
-            this.tabSM.Location = new System.Drawing.Point(4, 38);
+            this.tabSM.Location = new System.Drawing.Point(4, 44);
             this.tabSM.Name = "tabSM";
-            this.tabSM.Size = new System.Drawing.Size(959, 510);
+            this.tabSM.Size = new System.Drawing.Size(959, 504);
             this.tabSM.TabIndex = 0;
             this.tabSM.Text = "Solicitud de Mantemiento         ";
             this.tabSM.ToolTipText = "Muestra los datos relacionados a la solicitud de mantenimiento buscada.";
             this.tabSM.VerticalScrollbarBarColor = true;
             this.tabSM.VerticalScrollbarHighlightOnWheel = false;
             this.tabSM.VerticalScrollbarSize = 10;
+            // 
+            // btnResolverSM
+            // 
+            this.btnResolverSM.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.btnResolverSM.Location = new System.Drawing.Point(707, 458);
+            this.btnResolverSM.Name = "btnResolverSM";
+            this.btnResolverSM.Size = new System.Drawing.Size(245, 46);
+            this.btnResolverSM.Style = MetroFramework.MetroColorStyle.Green;
+            this.btnResolverSM.TabIndex = 13;
+            this.btnResolverSM.Text = "Resolver Solicitud de Mantemiento";
+            this.btnResolverSM.UseSelectable = true;
+            this.btnResolverSM.UseStyleColors = true;
+            this.btnResolverSM.Click += new System.EventHandler(this.btnResolverSM_Click);
+            // 
+            // metroLabel10
+            // 
+            this.metroLabel10.AutoSize = true;
+            this.metroLabel10.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel10.Location = new System.Drawing.Point(25, 436);
+            this.metroLabel10.Name = "metroLabel10";
+            this.metroLabel10.Size = new System.Drawing.Size(91, 19);
+            this.metroLabel10.TabIndex = 12;
+            this.metroLabel10.Text = "Descripcion:";
+            // 
+            // metroLabel9
+            // 
+            this.metroLabel9.AutoSize = true;
+            this.metroLabel9.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel9.Location = new System.Drawing.Point(25, 395);
+            this.metroLabel9.Name = "metroLabel9";
+            this.metroLabel9.Size = new System.Drawing.Size(136, 19);
+            this.metroLabel9.TabIndex = 11;
+            this.metroLabel9.Text = "Usuario solicitante:";
+            // 
+            // metroLabel8
+            // 
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel8.Location = new System.Drawing.Point(25, 354);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(78, 19);
+            this.metroLabel8.TabIndex = 10;
+            this.metroLabel8.Text = "Criticidad:";
+            // 
+            // metroLabel7
+            // 
+            this.metroLabel7.AutoSize = true;
+            this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel7.Location = new System.Drawing.Point(25, 313);
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.Size = new System.Drawing.Size(124, 19);
+            this.metroLabel7.TabIndex = 9;
+            this.metroLabel7.Text = "Tipo de solicitud:";
+            // 
+            // metroLabel6
+            // 
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel6.Location = new System.Drawing.Point(25, 272);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(163, 19);
+            this.metroLabel6.TabIndex = 8;
+            this.metroLabel6.Text = "Hora registro solución:";
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel5.Location = new System.Drawing.Point(25, 231);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(167, 19);
+            this.metroLabel5.TabIndex = 7;
+            this.metroLabel5.Text = "Fecha registro solución:";
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel4.Location = new System.Drawing.Point(25, 190);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(172, 19);
+            this.metroLabel4.TabIndex = 6;
+            this.metroLabel4.Text = "Versión de la aplicación:";
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel3.Location = new System.Drawing.Point(25, 149);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(182, 19);
+            this.metroLabel3.TabIndex = 5;
+            this.metroLabel3.Text = "Nombre de la aplicación: ";
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel2.Location = new System.Drawing.Point(25, 108);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(143, 19);
+            this.metroLabel2.TabIndex = 4;
+            this.metroLabel2.Text = "Fecha de necesidad:";
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel1.Location = new System.Drawing.Point(25, 67);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(118, 19);
+            this.metroLabel1.TabIndex = 3;
+            this.metroLabel1.Text = "Empresa cliente:";
+            // 
+            // lblTitleNombreProyecto
+            // 
+            this.lblTitleNombreProyecto.AutoSize = true;
+            this.lblTitleNombreProyecto.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.lblTitleNombreProyecto.Location = new System.Drawing.Point(25, 26);
+            this.lblTitleNombreProyecto.Name = "lblTitleNombreProyecto";
+            this.lblTitleNombreProyecto.Size = new System.Drawing.Size(159, 19);
+            this.lblTitleNombreProyecto.TabIndex = 2;
+            this.lblTitleNombreProyecto.Text = "Nombre del proyecto:";
             // 
             // tabPlan
             // 
@@ -224,9 +347,9 @@
             this.tabPlan.HorizontalScrollbarBarColor = true;
             this.tabPlan.HorizontalScrollbarHighlightOnWheel = false;
             this.tabPlan.HorizontalScrollbarSize = 10;
-            this.tabPlan.Location = new System.Drawing.Point(4, 38);
+            this.tabPlan.Location = new System.Drawing.Point(4, 44);
             this.tabPlan.Name = "tabPlan";
-            this.tabPlan.Size = new System.Drawing.Size(959, 510);
+            this.tabPlan.Size = new System.Drawing.Size(959, 504);
             this.tabPlan.TabIndex = 1;
             this.tabPlan.Text = "Plan          ";
             this.tabPlan.ToolTipText = "Muestra los datos relacionados al plan asociado a la solicitud de mantenimiento b" +
@@ -235,215 +358,34 @@
             this.tabPlan.VerticalScrollbarHighlightOnWheel = false;
             this.tabPlan.VerticalScrollbarSize = 10;
             // 
-            // lblTitleNombreProyecto
+            // btnDatosTicket
             // 
-            this.lblTitleNombreProyecto.AutoSize = true;
-            this.lblTitleNombreProyecto.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.lblTitleNombreProyecto.Location = new System.Drawing.Point(25, 26);
-            this.lblTitleNombreProyecto.Name = "lblTitleNombreProyecto";
-            this.lblTitleNombreProyecto.Size = new System.Drawing.Size(159, 19);
-            this.lblTitleNombreProyecto.TabIndex = 2;
-            this.lblTitleNombreProyecto.Text = "Nombre del proyecto:";
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel1.Location = new System.Drawing.Point(25, 67);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(118, 19);
-            this.metroLabel1.TabIndex = 3;
-            this.metroLabel1.Text = "Empresa cliente:";
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel2.Location = new System.Drawing.Point(25, 108);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(143, 19);
-            this.metroLabel2.TabIndex = 4;
-            this.metroLabel2.Text = "Fecha de necesidad:";
-            // 
-            // metroLabel3
-            // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel3.Location = new System.Drawing.Point(25, 149);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(182, 19);
-            this.metroLabel3.TabIndex = 5;
-            this.metroLabel3.Text = "Nombre de la aplicación: ";
-            // 
-            // metroLabel4
-            // 
-            this.metroLabel4.AutoSize = true;
-            this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel4.Location = new System.Drawing.Point(25, 190);
-            this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(172, 19);
-            this.metroLabel4.TabIndex = 6;
-            this.metroLabel4.Text = "Versión de la aplicación:";
-            // 
-            // metroLabel5
-            // 
-            this.metroLabel5.AutoSize = true;
-            this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel5.Location = new System.Drawing.Point(25, 231);
-            this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(167, 19);
-            this.metroLabel5.TabIndex = 7;
-            this.metroLabel5.Text = "Fecha registro solución:";
-            // 
-            // metroLabel6
-            // 
-            this.metroLabel6.AutoSize = true;
-            this.metroLabel6.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel6.Location = new System.Drawing.Point(25, 272);
-            this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(163, 19);
-            this.metroLabel6.TabIndex = 8;
-            this.metroLabel6.Text = "Hora registro solución:";
-            // 
-            // tabTickets
-            // 
-            this.tabTickets.Controls.Add(this.gridTicketsSeleccionados);
-            this.tabTickets.Controls.Add(this.metroLabel16);
-            this.tabTickets.HorizontalScrollbarBarColor = true;
-            this.tabTickets.HorizontalScrollbarHighlightOnWheel = false;
-            this.tabTickets.HorizontalScrollbarSize = 10;
-            this.tabTickets.Location = new System.Drawing.Point(4, 38);
-            this.tabTickets.Name = "tabTickets";
-            this.tabTickets.Size = new System.Drawing.Size(959, 510);
-            this.tabTickets.TabIndex = 2;
-            this.tabTickets.Text = "Tickets Asociados";
-            this.tabTickets.ToolTipText = "Muestra los datos de los tickets asociados al plan de la solicitud de mantenimien" +
-    "to buscada.";
-            this.tabTickets.VerticalScrollbarBarColor = true;
-            this.tabTickets.VerticalScrollbarHighlightOnWheel = false;
-            this.tabTickets.VerticalScrollbarSize = 10;
-            // 
-            // metroLabel7
-            // 
-            this.metroLabel7.AutoSize = true;
-            this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel7.Location = new System.Drawing.Point(25, 313);
-            this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(124, 19);
-            this.metroLabel7.TabIndex = 9;
-            this.metroLabel7.Text = "Tipo de solicitud:";
-            // 
-            // metroLabel8
-            // 
-            this.metroLabel8.AutoSize = true;
-            this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel8.Location = new System.Drawing.Point(25, 354);
-            this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(78, 19);
-            this.metroLabel8.TabIndex = 10;
-            this.metroLabel8.Text = "Criticidad:";
-            // 
-            // metroLabel9
-            // 
-            this.metroLabel9.AutoSize = true;
-            this.metroLabel9.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel9.Location = new System.Drawing.Point(25, 395);
-            this.metroLabel9.Name = "metroLabel9";
-            this.metroLabel9.Size = new System.Drawing.Size(136, 19);
-            this.metroLabel9.TabIndex = 11;
-            this.metroLabel9.Text = "Usuario solicitante:";
-            // 
-            // metroLabel10
-            // 
-            this.metroLabel10.AutoSize = true;
-            this.metroLabel10.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel10.Location = new System.Drawing.Point(25, 436);
-            this.metroLabel10.Name = "metroLabel10";
-            this.metroLabel10.Size = new System.Drawing.Size(91, 19);
-            this.metroLabel10.TabIndex = 12;
-            this.metroLabel10.Text = "Descripcion:";
-            // 
-            // btnResolverSM
-            // 
-            this.btnResolverSM.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnResolverSM.Location = new System.Drawing.Point(707, 448);
-            this.btnResolverSM.Name = "btnResolverSM";
-            this.btnResolverSM.Size = new System.Drawing.Size(245, 46);
-            this.btnResolverSM.Style = MetroFramework.MetroColorStyle.Green;
-            this.btnResolverSM.TabIndex = 13;
-            this.btnResolverSM.Text = "Resolver Solicitud de Mantemiento";
-            this.btnResolverSM.UseSelectable = true;
-            this.btnResolverSM.UseStyleColors = true;
-            // 
-            // metroLabel11
-            // 
-            this.metroLabel11.AutoSize = true;
-            this.metroLabel11.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel11.Location = new System.Drawing.Point(25, 26);
-            this.metroLabel11.Name = "metroLabel11";
-            this.metroLabel11.Size = new System.Drawing.Size(164, 19);
-            this.metroLabel11.TabIndex = 3;
-            this.metroLabel11.Text = "Fecha inicio resolución:";
-            // 
-            // metroLabel12
-            // 
-            this.metroLabel12.AutoSize = true;
-            this.metroLabel12.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel12.Location = new System.Drawing.Point(25, 65);
-            this.metroLabel12.Name = "metroLabel12";
-            this.metroLabel12.Size = new System.Drawing.Size(160, 19);
-            this.metroLabel12.TabIndex = 4;
-            this.metroLabel12.Text = "Hora inicio resolución:";
-            // 
-            // metroLabel13
-            // 
-            this.metroLabel13.AutoSize = true;
-            this.metroLabel13.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel13.Location = new System.Drawing.Point(25, 104);
-            this.metroLabel13.Name = "metroLabel13";
-            this.metroLabel13.Size = new System.Drawing.Size(145, 19);
-            this.metroLabel13.TabIndex = 5;
-            this.metroLabel13.Text = "Fecha fin resolución:";
-            // 
-            // metroLabel14
-            // 
-            this.metroLabel14.AutoSize = true;
-            this.metroLabel14.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel14.Location = new System.Drawing.Point(25, 143);
-            this.metroLabel14.Name = "metroLabel14";
-            this.metroLabel14.Size = new System.Drawing.Size(141, 19);
-            this.metroLabel14.TabIndex = 6;
-            this.metroLabel14.Text = "Hora fin resolución:";
-            // 
-            // metroLabel15
-            // 
-            this.metroLabel15.AutoSize = true;
-            this.metroLabel15.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel15.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel15.Location = new System.Drawing.Point(25, 198);
-            this.metroLabel15.Name = "metroLabel15";
-            this.metroLabel15.Size = new System.Drawing.Size(227, 25);
-            this.metroLabel15.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroLabel15.TabIndex = 7;
-            this.metroLabel15.Text = "Tickets asociados al plan:";
-            this.metroLabel15.UseStyleColors = true;
+            this.btnDatosTicket.Location = new System.Drawing.Point(769, 466);
+            this.btnDatosTicket.Name = "btnDatosTicket";
+            this.btnDatosTicket.Size = new System.Drawing.Size(158, 30);
+            this.btnDatosTicket.Style = MetroFramework.MetroColorStyle.Green;
+            this.btnDatosTicket.TabIndex = 9;
+            this.btnDatosTicket.Text = "Consultar Datos de Tickets";
+            this.btnDatosTicket.UseSelectable = true;
+            this.btnDatosTicket.UseStyleColors = true;
+            this.btnDatosTicket.Click += new System.EventHandler(this.btnDatosTicket_Click);
             // 
             // gridTicketsPlan
             // 
             this.gridTicketsPlan.AllowUserToResizeRows = false;
             this.gridTicketsPlan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridTicketsPlan.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.gridTicketsPlan.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gridTicketsPlan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridTicketsPlan.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridTicketsPlan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridTicketsPlan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridTicketsPlan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.gridTicketsPlan.ColumnHeadersHeight = 30;
             this.gridTicketsPlan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.gridTicketsPlan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -452,31 +394,31 @@
             this.tarea,
             this.miembro,
             this.horasConsumidas});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridTicketsPlan.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridTicketsPlan.DefaultCellStyle = dataGridViewCellStyle26;
             this.gridTicketsPlan.EnableHeadersVisualStyles = false;
             this.gridTicketsPlan.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.gridTicketsPlan.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gridTicketsPlan.Location = new System.Drawing.Point(25, 239);
             this.gridTicketsPlan.Name = "gridTicketsPlan";
             this.gridTicketsPlan.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridTicketsPlan.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridTicketsPlan.RowHeadersDefaultCellStyle = dataGridViewCellStyle27;
             this.gridTicketsPlan.RowHeadersWidth = 60;
             this.gridTicketsPlan.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.gridTicketsPlan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.gridTicketsPlan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridTicketsPlan.Size = new System.Drawing.Size(902, 207);
             this.gridTicketsPlan.Style = MetroFramework.MetroColorStyle.Green;
             this.gridTicketsPlan.TabIndex = 8;
@@ -507,16 +449,76 @@
             this.horasConsumidas.HeaderText = "Horas Consumidas";
             this.horasConsumidas.Name = "horasConsumidas";
             // 
-            // btnDatosTicket
+            // metroLabel15
             // 
-            this.btnDatosTicket.Location = new System.Drawing.Point(769, 466);
-            this.btnDatosTicket.Name = "btnDatosTicket";
-            this.btnDatosTicket.Size = new System.Drawing.Size(158, 30);
-            this.btnDatosTicket.Style = MetroFramework.MetroColorStyle.Green;
-            this.btnDatosTicket.TabIndex = 9;
-            this.btnDatosTicket.Text = "Consultar Datos de Tickets";
-            this.btnDatosTicket.UseSelectable = true;
-            this.btnDatosTicket.UseStyleColors = true;
+            this.metroLabel15.AutoSize = true;
+            this.metroLabel15.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel15.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel15.Location = new System.Drawing.Point(25, 198);
+            this.metroLabel15.Name = "metroLabel15";
+            this.metroLabel15.Size = new System.Drawing.Size(227, 25);
+            this.metroLabel15.Style = MetroFramework.MetroColorStyle.Green;
+            this.metroLabel15.TabIndex = 7;
+            this.metroLabel15.Text = "Tickets asociados al plan:";
+            this.metroLabel15.UseStyleColors = true;
+            // 
+            // metroLabel14
+            // 
+            this.metroLabel14.AutoSize = true;
+            this.metroLabel14.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel14.Location = new System.Drawing.Point(25, 143);
+            this.metroLabel14.Name = "metroLabel14";
+            this.metroLabel14.Size = new System.Drawing.Size(141, 19);
+            this.metroLabel14.TabIndex = 6;
+            this.metroLabel14.Text = "Hora fin resolución:";
+            // 
+            // metroLabel13
+            // 
+            this.metroLabel13.AutoSize = true;
+            this.metroLabel13.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel13.Location = new System.Drawing.Point(25, 104);
+            this.metroLabel13.Name = "metroLabel13";
+            this.metroLabel13.Size = new System.Drawing.Size(145, 19);
+            this.metroLabel13.TabIndex = 5;
+            this.metroLabel13.Text = "Fecha fin resolución:";
+            // 
+            // metroLabel12
+            // 
+            this.metroLabel12.AutoSize = true;
+            this.metroLabel12.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel12.Location = new System.Drawing.Point(25, 65);
+            this.metroLabel12.Name = "metroLabel12";
+            this.metroLabel12.Size = new System.Drawing.Size(160, 19);
+            this.metroLabel12.TabIndex = 4;
+            this.metroLabel12.Text = "Hora inicio resolución:";
+            // 
+            // metroLabel11
+            // 
+            this.metroLabel11.AutoSize = true;
+            this.metroLabel11.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel11.Location = new System.Drawing.Point(25, 26);
+            this.metroLabel11.Name = "metroLabel11";
+            this.metroLabel11.Size = new System.Drawing.Size(164, 19);
+            this.metroLabel11.TabIndex = 3;
+            this.metroLabel11.Text = "Fecha inicio resolución:";
+            // 
+            // tabTickets
+            // 
+            this.tabTickets.Controls.Add(this.gridTicketsSeleccionados);
+            this.tabTickets.Controls.Add(this.metroLabel16);
+            this.tabTickets.HorizontalScrollbarBarColor = true;
+            this.tabTickets.HorizontalScrollbarHighlightOnWheel = false;
+            this.tabTickets.HorizontalScrollbarSize = 10;
+            this.tabTickets.Location = new System.Drawing.Point(4, 44);
+            this.tabTickets.Name = "tabTickets";
+            this.tabTickets.Size = new System.Drawing.Size(959, 504);
+            this.tabTickets.TabIndex = 2;
+            this.tabTickets.Text = "Tickets Asociados";
+            this.tabTickets.ToolTipText = "Muestra los datos de los tickets asociados al plan de la solicitud de mantenimien" +
+    "to buscada.";
+            this.tabTickets.VerticalScrollbarBarColor = true;
+            this.tabTickets.VerticalScrollbarHighlightOnWheel = false;
+            this.tabTickets.VerticalScrollbarSize = 10;
             // 
             // metroLabel16
             // 
@@ -531,22 +533,60 @@
             this.metroLabel16.Text = "Datos de Tickets Seleccionados:";
             this.metroLabel16.UseStyleColors = true;
             // 
+            // comentarios
+            // 
+            this.comentarios.HeaderText = "Comentarios";
+            this.comentarios.Name = "comentarios";
+            this.comentarios.Text = "Comentarios";
+            this.comentarios.ToolTipText = "Mostrar comentarios del ticket";
+            this.comentarios.UseColumnTextForButtonValue = true;
+            // 
+            // costo
+            // 
+            this.costo.HeaderText = "Costo";
+            this.costo.Name = "costo";
+            // 
+            // horasConsumidasTkt
+            // 
+            this.horasConsumidasTkt.HeaderText = "Horas Consumidas";
+            this.horasConsumidasTkt.Name = "horasConsumidasTkt";
+            // 
+            // horasEstimadas
+            // 
+            this.horasEstimadas.HeaderText = "Horas Estimadas";
+            this.horasEstimadas.Name = "horasEstimadas";
+            // 
+            // fechaFinPrevista
+            // 
+            this.fechaFinPrevista.HeaderText = "Fecha de Fin Prevista";
+            this.fechaFinPrevista.Name = "fechaFinPrevista";
+            // 
+            // fechaInicio
+            // 
+            this.fechaInicio.HeaderText = "Fecha de Inicio";
+            this.fechaInicio.Name = "fechaInicio";
+            // 
+            // idTicket
+            // 
+            this.idTicket.HeaderText = "ID";
+            this.idTicket.Name = "idTicket";
+            // 
             // gridTicketsSeleccionados
             // 
             this.gridTicketsSeleccionados.AllowUserToResizeRows = false;
             this.gridTicketsSeleccionados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridTicketsSeleccionados.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.gridTicketsSeleccionados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gridTicketsSeleccionados.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridTicketsSeleccionados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridTicketsSeleccionados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridTicketsSeleccionados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridTicketsSeleccionados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle28;
             this.gridTicketsSeleccionados.ColumnHeadersHeight = 30;
             this.gridTicketsSeleccionados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.gridTicketsSeleccionados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -557,28 +597,28 @@
             this.horasConsumidasTkt,
             this.costo,
             this.comentarios});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridTicketsSeleccionados.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridTicketsSeleccionados.DefaultCellStyle = dataGridViewCellStyle29;
             this.gridTicketsSeleccionados.EnableHeadersVisualStyles = false;
             this.gridTicketsSeleccionados.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.gridTicketsSeleccionados.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gridTicketsSeleccionados.Location = new System.Drawing.Point(25, 88);
             this.gridTicketsSeleccionados.Name = "gridTicketsSeleccionados";
             this.gridTicketsSeleccionados.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridTicketsSeleccionados.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridTicketsSeleccionados.RowHeadersDefaultCellStyle = dataGridViewCellStyle30;
             this.gridTicketsSeleccionados.RowHeadersWidth = 60;
             this.gridTicketsSeleccionados.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridTicketsSeleccionados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -586,44 +626,6 @@
             this.gridTicketsSeleccionados.Style = MetroFramework.MetroColorStyle.Green;
             this.gridTicketsSeleccionados.TabIndex = 9;
             this.gridTicketsSeleccionados.UseStyleColors = true;
-            // 
-            // idTicket
-            // 
-            this.idTicket.HeaderText = "ID";
-            this.idTicket.Name = "idTicket";
-            // 
-            // fechaInicio
-            // 
-            this.fechaInicio.HeaderText = "Fecha de Inicio";
-            this.fechaInicio.Name = "fechaInicio";
-            // 
-            // fechaFinPrevista
-            // 
-            this.fechaFinPrevista.HeaderText = "Fecha de Fin Prevista";
-            this.fechaFinPrevista.Name = "fechaFinPrevista";
-            // 
-            // horasEstimadas
-            // 
-            this.horasEstimadas.HeaderText = "Horas Estimadas";
-            this.horasEstimadas.Name = "horasEstimadas";
-            // 
-            // horasConsumidasTkt
-            // 
-            this.horasConsumidasTkt.HeaderText = "Horas Consumidas";
-            this.horasConsumidasTkt.Name = "horasConsumidasTkt";
-            // 
-            // costo
-            // 
-            this.costo.HeaderText = "Costo";
-            this.costo.Name = "costo";
-            // 
-            // comentarios
-            // 
-            this.comentarios.HeaderText = "Comentarios";
-            this.comentarios.Name = "comentarios";
-            this.comentarios.Text = "Comentarios";
-            this.comentarios.ToolTipText = "Mostrar comentarios del ticket";
-            this.comentarios.UseColumnTextForButtonValue = true;
             // 
             // mainPantallaResolucionSM
             // 
@@ -649,9 +651,9 @@
             this.tabSM.PerformLayout();
             this.tabPlan.ResumeLayout(false);
             this.tabPlan.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridTicketsPlan)).EndInit();
             this.tabTickets.ResumeLayout(false);
             this.tabTickets.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridTicketsPlan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridTicketsSeleccionados)).EndInit();
             this.ResumeLayout(false);
 
