@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainPantallaResolucionSM));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtNumeroSM = new MetroFramework.Controls.MetroTextBox();
             this.btnBuscarSM = new MetroFramework.Controls.MetroButton();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
@@ -68,15 +68,30 @@
             this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
             this.tabTickets = new MetroFramework.Controls.MetroTabPage();
-            this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
-            this.comentarios = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horasConsumidasTkt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horasEstimadas = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaFinPrevista = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idTicket = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gridTicketsSeleccionados = new MetroFramework.Controls.MetroGrid();
+            this.idTicket = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaFinPrevista = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.horasEstimadas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.horasConsumidasTkt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comentarios = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
+            this.txtNombreProyecto = new MetroFramework.Controls.MetroLabel();
+            this.txtNombreEmpresa = new MetroFramework.Controls.MetroLabel();
+            this.txtFechaNecesidad = new MetroFramework.Controls.MetroLabel();
+            this.txtNombreAplicacion = new MetroFramework.Controls.MetroLabel();
+            this.txtVersionAplicacion = new MetroFramework.Controls.MetroLabel();
+            this.txtFechaRegistro = new MetroFramework.Controls.MetroLabel();
+            this.txtHoraRegistro = new MetroFramework.Controls.MetroLabel();
+            this.txtTipoSolicitud = new MetroFramework.Controls.MetroLabel();
+            this.txtCriticidad = new MetroFramework.Controls.MetroLabel();
+            this.txtUsuarioSolicitante = new MetroFramework.Controls.MetroLabel();
+            this.txtDescripcion = new MetroFramework.Controls.MetroLabel();
+            this.txtFechaInicioPlan = new MetroFramework.Controls.MetroLabel();
+            this.txtFechaFinPlan = new MetroFramework.Controls.MetroLabel();
+            this.txtHoraInicioPlan = new MetroFramework.Controls.MetroLabel();
+            this.txtHoraFinPlan = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.imgPoloc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabsResultadoBusqueda.SuspendLayout();
@@ -175,6 +190,7 @@
             this.tabsResultadoBusqueda.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tabsResultadoBusqueda.FontSize = MetroFramework.MetroTabControlSize.Tall;
             this.tabsResultadoBusqueda.FontWeight = MetroFramework.MetroTabControlWeight.Bold;
+            this.tabsResultadoBusqueda.HotTrack = true;
             this.tabsResultadoBusqueda.Location = new System.Drawing.Point(20, 128);
             this.tabsResultadoBusqueda.Name = "tabsResultadoBusqueda";
             this.tabsResultadoBusqueda.SelectedIndex = 0;
@@ -187,6 +203,17 @@
             // 
             // tabSM
             // 
+            this.tabSM.Controls.Add(this.txtDescripcion);
+            this.tabSM.Controls.Add(this.txtUsuarioSolicitante);
+            this.tabSM.Controls.Add(this.txtCriticidad);
+            this.tabSM.Controls.Add(this.txtTipoSolicitud);
+            this.tabSM.Controls.Add(this.txtHoraRegistro);
+            this.tabSM.Controls.Add(this.txtFechaRegistro);
+            this.tabSM.Controls.Add(this.txtVersionAplicacion);
+            this.tabSM.Controls.Add(this.txtNombreAplicacion);
+            this.tabSM.Controls.Add(this.txtFechaNecesidad);
+            this.tabSM.Controls.Add(this.txtNombreEmpresa);
+            this.tabSM.Controls.Add(this.txtNombreProyecto);
             this.tabSM.Controls.Add(this.btnResolverSM);
             this.tabSM.Controls.Add(this.metroLabel10);
             this.tabSM.Controls.Add(this.metroLabel9);
@@ -215,7 +242,7 @@
             // btnResolverSM
             // 
             this.btnResolverSM.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.btnResolverSM.Location = new System.Drawing.Point(707, 458);
+            this.btnResolverSM.Location = new System.Drawing.Point(694, 445);
             this.btnResolverSM.Name = "btnResolverSM";
             this.btnResolverSM.Size = new System.Drawing.Size(245, 46);
             this.btnResolverSM.Style = MetroFramework.MetroColorStyle.Green;
@@ -337,6 +364,10 @@
             // 
             // tabPlan
             // 
+            this.tabPlan.Controls.Add(this.txtHoraFinPlan);
+            this.tabPlan.Controls.Add(this.txtHoraInicioPlan);
+            this.tabPlan.Controls.Add(this.txtFechaFinPlan);
+            this.tabPlan.Controls.Add(this.txtFechaInicioPlan);
             this.tabPlan.Controls.Add(this.btnDatosTicket);
             this.tabPlan.Controls.Add(this.gridTicketsPlan);
             this.tabPlan.Controls.Add(this.metroLabel15);
@@ -378,14 +409,14 @@
             this.gridTicketsPlan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridTicketsPlan.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridTicketsPlan.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridTicketsPlan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridTicketsPlan.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridTicketsPlan.ColumnHeadersHeight = 30;
             this.gridTicketsPlan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.gridTicketsPlan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -394,28 +425,28 @@
             this.tarea,
             this.miembro,
             this.horasConsumidas});
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridTicketsPlan.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridTicketsPlan.DefaultCellStyle = dataGridViewCellStyle2;
             this.gridTicketsPlan.EnableHeadersVisualStyles = false;
             this.gridTicketsPlan.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.gridTicketsPlan.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gridTicketsPlan.Location = new System.Drawing.Point(25, 239);
             this.gridTicketsPlan.Name = "gridTicketsPlan";
             this.gridTicketsPlan.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridTicketsPlan.RowHeadersDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridTicketsPlan.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.gridTicketsPlan.RowHeadersWidth = 60;
             this.gridTicketsPlan.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.gridTicketsPlan.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -511,7 +542,7 @@
             this.tabTickets.HorizontalScrollbarSize = 10;
             this.tabTickets.Location = new System.Drawing.Point(4, 44);
             this.tabTickets.Name = "tabTickets";
-            this.tabTickets.Size = new System.Drawing.Size(959, 504);
+            this.tabTickets.Size = new System.Drawing.Size(960, 504);
             this.tabTickets.TabIndex = 2;
             this.tabTickets.Text = "Tickets Asociados";
             this.tabTickets.ToolTipText = "Muestra los datos de los tickets asociados al plan de la solicitud de mantenimien" +
@@ -519,6 +550,100 @@
             this.tabTickets.VerticalScrollbarBarColor = true;
             this.tabTickets.VerticalScrollbarHighlightOnWheel = false;
             this.tabTickets.VerticalScrollbarSize = 10;
+            // 
+            // gridTicketsSeleccionados
+            // 
+            this.gridTicketsSeleccionados.AllowUserToResizeRows = false;
+            this.gridTicketsSeleccionados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridTicketsSeleccionados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gridTicketsSeleccionados.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridTicketsSeleccionados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gridTicketsSeleccionados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridTicketsSeleccionados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.gridTicketsSeleccionados.ColumnHeadersHeight = 30;
+            this.gridTicketsSeleccionados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.gridTicketsSeleccionados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idTicket,
+            this.fechaInicio,
+            this.fechaFinPrevista,
+            this.horasEstimadas,
+            this.horasConsumidasTkt,
+            this.costo,
+            this.comentarios});
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridTicketsSeleccionados.DefaultCellStyle = dataGridViewCellStyle5;
+            this.gridTicketsSeleccionados.EnableHeadersVisualStyles = false;
+            this.gridTicketsSeleccionados.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.gridTicketsSeleccionados.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.gridTicketsSeleccionados.Location = new System.Drawing.Point(25, 88);
+            this.gridTicketsSeleccionados.Name = "gridTicketsSeleccionados";
+            this.gridTicketsSeleccionados.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridTicketsSeleccionados.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.gridTicketsSeleccionados.RowHeadersWidth = 60;
+            this.gridTicketsSeleccionados.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.gridTicketsSeleccionados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridTicketsSeleccionados.Size = new System.Drawing.Size(902, 207);
+            this.gridTicketsSeleccionados.Style = MetroFramework.MetroColorStyle.Green;
+            this.gridTicketsSeleccionados.TabIndex = 9;
+            this.gridTicketsSeleccionados.UseStyleColors = true;
+            // 
+            // idTicket
+            // 
+            this.idTicket.HeaderText = "ID";
+            this.idTicket.Name = "idTicket";
+            // 
+            // fechaInicio
+            // 
+            this.fechaInicio.HeaderText = "Fecha de Inicio";
+            this.fechaInicio.Name = "fechaInicio";
+            // 
+            // fechaFinPrevista
+            // 
+            this.fechaFinPrevista.HeaderText = "Fecha de Fin Prevista";
+            this.fechaFinPrevista.Name = "fechaFinPrevista";
+            // 
+            // horasEstimadas
+            // 
+            this.horasEstimadas.HeaderText = "Horas Estimadas";
+            this.horasEstimadas.Name = "horasEstimadas";
+            // 
+            // horasConsumidasTkt
+            // 
+            this.horasConsumidasTkt.HeaderText = "Horas Consumidas";
+            this.horasConsumidasTkt.Name = "horasConsumidasTkt";
+            // 
+            // costo
+            // 
+            this.costo.HeaderText = "Costo";
+            this.costo.Name = "costo";
+            // 
+            // comentarios
+            // 
+            this.comentarios.HeaderText = "Comentarios";
+            this.comentarios.Name = "comentarios";
+            this.comentarios.Text = "Comentarios";
+            this.comentarios.ToolTipText = "Mostrar comentarios del ticket";
+            this.comentarios.UseColumnTextForButtonValue = true;
             // 
             // metroLabel16
             // 
@@ -533,99 +658,144 @@
             this.metroLabel16.Text = "Datos de Tickets Seleccionados:";
             this.metroLabel16.UseStyleColors = true;
             // 
-            // comentarios
+            // txtNombreProyecto
             // 
-            this.comentarios.HeaderText = "Comentarios";
-            this.comentarios.Name = "comentarios";
-            this.comentarios.Text = "Comentarios";
-            this.comentarios.ToolTipText = "Mostrar comentarios del ticket";
-            this.comentarios.UseColumnTextForButtonValue = true;
+            this.txtNombreProyecto.AutoSize = true;
+            this.txtNombreProyecto.Location = new System.Drawing.Point(239, 26);
+            this.txtNombreProyecto.Name = "txtNombreProyecto";
+            this.txtNombreProyecto.Size = new System.Drawing.Size(72, 19);
+            this.txtNombreProyecto.TabIndex = 14;
+            this.txtNombreProyecto.Text = "Proyecto 1";
             // 
-            // costo
+            // txtNombreEmpresa
             // 
-            this.costo.HeaderText = "Costo";
-            this.costo.Name = "costo";
+            this.txtNombreEmpresa.AutoSize = true;
+            this.txtNombreEmpresa.Location = new System.Drawing.Point(239, 67);
+            this.txtNombreEmpresa.Name = "txtNombreEmpresa";
+            this.txtNombreEmpresa.Size = new System.Drawing.Size(71, 19);
+            this.txtNombreEmpresa.TabIndex = 15;
+            this.txtNombreEmpresa.Text = "Empresa 1";
             // 
-            // horasConsumidasTkt
+            // txtFechaNecesidad
             // 
-            this.horasConsumidasTkt.HeaderText = "Horas Consumidas";
-            this.horasConsumidasTkt.Name = "horasConsumidasTkt";
+            this.txtFechaNecesidad.AutoSize = true;
+            this.txtFechaNecesidad.Location = new System.Drawing.Point(239, 108);
+            this.txtFechaNecesidad.Name = "txtFechaNecesidad";
+            this.txtFechaNecesidad.Size = new System.Drawing.Size(75, 19);
+            this.txtFechaNecesidad.TabIndex = 16;
+            this.txtFechaNecesidad.Text = "00/00/0000";
             // 
-            // horasEstimadas
+            // txtNombreAplicacion
             // 
-            this.horasEstimadas.HeaderText = "Horas Estimadas";
-            this.horasEstimadas.Name = "horasEstimadas";
+            this.txtNombreAplicacion.AutoSize = true;
+            this.txtNombreAplicacion.Location = new System.Drawing.Point(239, 149);
+            this.txtNombreAplicacion.Name = "txtNombreAplicacion";
+            this.txtNombreAplicacion.Size = new System.Drawing.Size(80, 19);
+            this.txtNombreAplicacion.TabIndex = 17;
+            this.txtNombreAplicacion.Text = "Aplicación 1";
             // 
-            // fechaFinPrevista
+            // txtVersionAplicacion
             // 
-            this.fechaFinPrevista.HeaderText = "Fecha de Fin Prevista";
-            this.fechaFinPrevista.Name = "fechaFinPrevista";
+            this.txtVersionAplicacion.AutoSize = true;
+            this.txtVersionAplicacion.Location = new System.Drawing.Point(239, 190);
+            this.txtVersionAplicacion.Name = "txtVersionAplicacion";
+            this.txtVersionAplicacion.Size = new System.Drawing.Size(127, 19);
+            this.txtVersionAplicacion.TabIndex = 18;
+            this.txtVersionAplicacion.Text = "Version Aplicación 1";
             // 
-            // fechaInicio
+            // txtFechaRegistro
             // 
-            this.fechaInicio.HeaderText = "Fecha de Inicio";
-            this.fechaInicio.Name = "fechaInicio";
+            this.txtFechaRegistro.AutoSize = true;
+            this.txtFechaRegistro.Location = new System.Drawing.Point(239, 231);
+            this.txtFechaRegistro.Name = "txtFechaRegistro";
+            this.txtFechaRegistro.Size = new System.Drawing.Size(75, 19);
+            this.txtFechaRegistro.TabIndex = 19;
+            this.txtFechaRegistro.Text = "00/00/0000";
             // 
-            // idTicket
+            // txtHoraRegistro
             // 
-            this.idTicket.HeaderText = "ID";
-            this.idTicket.Name = "idTicket";
+            this.txtHoraRegistro.AutoSize = true;
+            this.txtHoraRegistro.Location = new System.Drawing.Point(239, 272);
+            this.txtHoraRegistro.Name = "txtHoraRegistro";
+            this.txtHoraRegistro.Size = new System.Drawing.Size(75, 19);
+            this.txtHoraRegistro.TabIndex = 20;
+            this.txtHoraRegistro.Text = "00/00/0000";
             // 
-            // gridTicketsSeleccionados
+            // txtTipoSolicitud
             // 
-            this.gridTicketsSeleccionados.AllowUserToResizeRows = false;
-            this.gridTicketsSeleccionados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridTicketsSeleccionados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.gridTicketsSeleccionados.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gridTicketsSeleccionados.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.gridTicketsSeleccionados.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle28.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridTicketsSeleccionados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle28;
-            this.gridTicketsSeleccionados.ColumnHeadersHeight = 30;
-            this.gridTicketsSeleccionados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.gridTicketsSeleccionados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idTicket,
-            this.fechaInicio,
-            this.fechaFinPrevista,
-            this.horasEstimadas,
-            this.horasConsumidasTkt,
-            this.costo,
-            this.comentarios});
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridTicketsSeleccionados.DefaultCellStyle = dataGridViewCellStyle29;
-            this.gridTicketsSeleccionados.EnableHeadersVisualStyles = false;
-            this.gridTicketsSeleccionados.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.gridTicketsSeleccionados.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.gridTicketsSeleccionados.Location = new System.Drawing.Point(25, 88);
-            this.gridTicketsSeleccionados.Name = "gridTicketsSeleccionados";
-            this.gridTicketsSeleccionados.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(208)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridTicketsSeleccionados.RowHeadersDefaultCellStyle = dataGridViewCellStyle30;
-            this.gridTicketsSeleccionados.RowHeadersWidth = 60;
-            this.gridTicketsSeleccionados.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.gridTicketsSeleccionados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridTicketsSeleccionados.Size = new System.Drawing.Size(902, 207);
-            this.gridTicketsSeleccionados.Style = MetroFramework.MetroColorStyle.Green;
-            this.gridTicketsSeleccionados.TabIndex = 9;
-            this.gridTicketsSeleccionados.UseStyleColors = true;
+            this.txtTipoSolicitud.AutoSize = true;
+            this.txtTipoSolicitud.Location = new System.Drawing.Point(239, 313);
+            this.txtTipoSolicitud.Name = "txtTipoSolicitud";
+            this.txtTipoSolicitud.Size = new System.Drawing.Size(116, 19);
+            this.txtTipoSolicitud.TabIndex = 21;
+            this.txtTipoSolicitud.Text = "Tipo de solicitud 1";
+            // 
+            // txtCriticidad
+            // 
+            this.txtCriticidad.AutoSize = true;
+            this.txtCriticidad.Location = new System.Drawing.Point(239, 354);
+            this.txtCriticidad.Name = "txtCriticidad";
+            this.txtCriticidad.Size = new System.Drawing.Size(76, 19);
+            this.txtCriticidad.TabIndex = 22;
+            this.txtCriticidad.Text = "Criticidad 1";
+            // 
+            // txtUsuarioSolicitante
+            // 
+            this.txtUsuarioSolicitante.AutoSize = true;
+            this.txtUsuarioSolicitante.Location = new System.Drawing.Point(239, 395);
+            this.txtUsuarioSolicitante.Name = "txtUsuarioSolicitante";
+            this.txtUsuarioSolicitante.Size = new System.Drawing.Size(64, 19);
+            this.txtUsuarioSolicitante.TabIndex = 23;
+            this.txtUsuarioSolicitante.Text = "Usuario 1";
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.AutoSize = true;
+            this.txtDescripcion.ForeColor = System.Drawing.Color.Black;
+            this.txtDescripcion.Location = new System.Drawing.Point(239, 436);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(419, 76);
+            this.txtDescripcion.TabIndex = 24;
+            this.txtDescripcion.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \r\nDonec molestie pellent" +
+    "esque pharetra. Nulla facilisi. Morbi vitae massa\r\npretium, elementum neque id, " +
+    "feugiat quam. Donec at ante felis. \r\n";
+            this.txtDescripcion.UseWaitCursor = true;
+            // 
+            // txtFechaInicioPlan
+            // 
+            this.txtFechaInicioPlan.AutoSize = true;
+            this.txtFechaInicioPlan.Location = new System.Drawing.Point(248, 26);
+            this.txtFechaInicioPlan.Name = "txtFechaInicioPlan";
+            this.txtFechaInicioPlan.Size = new System.Drawing.Size(75, 19);
+            this.txtFechaInicioPlan.TabIndex = 10;
+            this.txtFechaInicioPlan.Text = "00/00/0000";
+            // 
+            // txtFechaFinPlan
+            // 
+            this.txtFechaFinPlan.AutoSize = true;
+            this.txtFechaFinPlan.Location = new System.Drawing.Point(248, 104);
+            this.txtFechaFinPlan.Name = "txtFechaFinPlan";
+            this.txtFechaFinPlan.Size = new System.Drawing.Size(75, 19);
+            this.txtFechaFinPlan.TabIndex = 11;
+            this.txtFechaFinPlan.Text = "00/00/0000";
+            // 
+            // txtHoraInicioPlan
+            // 
+            this.txtHoraInicioPlan.AutoSize = true;
+            this.txtHoraInicioPlan.Location = new System.Drawing.Point(248, 65);
+            this.txtHoraInicioPlan.Name = "txtHoraInicioPlan";
+            this.txtHoraInicioPlan.Size = new System.Drawing.Size(40, 19);
+            this.txtHoraInicioPlan.TabIndex = 12;
+            this.txtHoraInicioPlan.Text = "00:00";
+            // 
+            // txtHoraFinPlan
+            // 
+            this.txtHoraFinPlan.AutoSize = true;
+            this.txtHoraFinPlan.Location = new System.Drawing.Point(248, 143);
+            this.txtHoraFinPlan.Name = "txtHoraFinPlan";
+            this.txtHoraFinPlan.Size = new System.Drawing.Size(40, 19);
+            this.txtHoraFinPlan.TabIndex = 13;
+            this.txtHoraFinPlan.Text = "00:00";
             // 
             // mainPantallaResolucionSM
             // 
@@ -703,6 +873,21 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn horasConsumidasTkt;
         private System.Windows.Forms.DataGridViewTextBoxColumn costo;
         private System.Windows.Forms.DataGridViewButtonColumn comentarios;
+        private MetroFramework.Controls.MetroLabel txtHoraRegistro;
+        private MetroFramework.Controls.MetroLabel txtFechaRegistro;
+        private MetroFramework.Controls.MetroLabel txtVersionAplicacion;
+        private MetroFramework.Controls.MetroLabel txtNombreAplicacion;
+        private MetroFramework.Controls.MetroLabel txtFechaNecesidad;
+        private MetroFramework.Controls.MetroLabel txtNombreEmpresa;
+        private MetroFramework.Controls.MetroLabel txtNombreProyecto;
+        private MetroFramework.Controls.MetroLabel txtDescripcion;
+        private MetroFramework.Controls.MetroLabel txtUsuarioSolicitante;
+        private MetroFramework.Controls.MetroLabel txtCriticidad;
+        private MetroFramework.Controls.MetroLabel txtTipoSolicitud;
+        private MetroFramework.Controls.MetroLabel txtHoraFinPlan;
+        private MetroFramework.Controls.MetroLabel txtHoraInicioPlan;
+        private MetroFramework.Controls.MetroLabel txtFechaFinPlan;
+        private MetroFramework.Controls.MetroLabel txtFechaInicioPlan;
     }
 }
 
