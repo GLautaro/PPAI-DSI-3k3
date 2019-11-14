@@ -12,6 +12,10 @@ namespace RealizacionCU22
 {
     public partial class mainPantallaResolucionSM : MetroFramework.Forms.MetroForm
     {
+
+        MetroFramework.Controls.MetroTabPage tabTicket;
+
+
         public mainPantallaResolucionSM()
         {
             InitializeComponent();
@@ -19,7 +23,7 @@ namespace RealizacionCU22
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            tabTicket = this.tabTickets;
         }
 
         private void btnBuscarSM_Click(object sender, EventArgs e)
@@ -37,6 +41,8 @@ namespace RealizacionCU22
                     "Busqueda realizada", MessageBoxButtons.OK, MessageBoxIcon.Question, 100);
                 //Mapear datos a la pantalla (a los labels)
                 this.tabsResultadoBusqueda.Visible = true;
+                this.tabsResultadoBusqueda.TabPages.Remove(this.tabTickets);
+
 
             }
         }
@@ -56,8 +62,8 @@ namespace RealizacionCU22
         private void btnDatosTicket_Click(object sender, EventArgs e)
         {
             //Pedir al gestor que devuelva los datos de los tickets seleccionados. Luego mapearlos a la tabla o a una ListView.
+            this.tabsResultadoBusqueda.TabPages.Insert(2, tabTicket);
             tabsResultadoBusqueda.SelectedTab = tabTickets;
-
         }
     }
 }
