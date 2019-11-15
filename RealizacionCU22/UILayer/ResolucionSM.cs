@@ -41,8 +41,11 @@ namespace RealizacionCU22
                 this.tabsResultadoBusqueda.Visible = false;
                 return;
             }
-            solicitudSeleccionada = _context.SolicitudesMantenimiento.Include(x => x.EstadoActual).Where(x => x.Id.ToString() == txtNumeroSM.Text && x.EstadoActual.Nombre=="En Resolucion").SingleOrDefault();
-            
+            solicitudSeleccionada = _context.SolicitudesMantenimiento
+                                    .Include(solicitud => solicitud.EstadoActual)
+                                    .Include(solicitud => solicitud.HistorialesEstadoSM.Select(h => h.Estado))                              
+                                    .Where(x => x.Id.ToString() == txtNumeroSM.Text && x.EstadoActual.Nombre=="En Ejecucion").SingleOrDefault();
+
 
 
             if (solicitudSeleccionada == null)
@@ -55,10 +58,9 @@ namespace RealizacionCU22
             {
                 MetroFramework.MetroMessageBox.Show(this, "Solicitud de mantenimiento encontrada",
                     "Busqueda Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Question, 100);
-
+                //1 2 3 4 8 10 19
                 //Mapear datos a la pantalla (a los labels)
-                solicitudSeleccionada.EstadoActual = new EnEjecucion();
-                this.tabsResultadoBusqueda.Visible = true;
+                tabsResultadoBusqueda.Visible = true;
                 tabsResultadoBusqueda.SelectedTab = tabSM;
 
                 RellenarDatosProyecto();
@@ -118,17 +120,13 @@ namespace RealizacionCU22
         {
             DialogResult dialog = MetroFramework.MetroMessageBox.Show(this, "Esta seguro que desea confirmar la resolucion de la solicitud de mantenimiento", 
                 "Confirmar resolución", MessageBoxButtons.YesNo, MessageBoxIcon.Information, 100);
-            if(dialog == DialogResult.Yes){
 
-                //Pedir al gestor que dispare los mensajes para el cambio de estado.
+            if (dialog == DialogResult.Yes) { 
                 solicitudSeleccionada.Resolver();
-
-                _context.Entry(solicitudSeleccionada).State = EntityState.Modified;
-                _context.SaveChanges();
-                
-
-
-                this.tabsResultadoBusqueda.Visible = false;
+                _context.SaveChanges();             
+                tabsResultadoBusqueda.Visible = false;
+                MetroFramework.MetroMessageBox.Show(this, "Solicitud de mantenimiento resuelta",
+                    "Resolucion Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Question, 100);
             }
             
         }
@@ -143,7 +141,7 @@ namespace RealizacionCU22
             {
                 if (gridTicketsPlan.Rows[i].Cells[0].Value == "true")
                 {
-                    var ticketOriginal = _context.Tickets.Find(gridTicketsPlan.Rows[i].Cells[1].Value.ToString());
+                    var ticketOriginal = _context.Tickets.Find(int.Parse(gridTicketsPlan.Rows[i].Cells[1].Value.ToString()));
                     var ticket = new SelectedTicketViewModel(ticketOriginal.Id.ToString(),ticketOriginal.FechaInicioReal,ticketOriginal.FechaFinPrevista,ticketOriginal.calcularHorasConsumidas(),ticketOriginal.calcularHorasConsumidas()*ticketOriginal.ValorHoraReal,null);
                     ticket.Costo = rand.Next(1,10) * ticket.calcularHorasConsumidas();
                     ticket.HorasConsumidas = ticket.calcularHorasConsumidas();

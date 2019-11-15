@@ -28,52 +28,6 @@ namespace RealizacionCU22.Modelo
         {
 
         }
-
-        public void BuscarSMEnProyecto()
-        {
-
-        }
-
-        public int ContarSolicitudesPorPeriodo(DateTime inicioPeriodo, DateTime finPeriodo)
-        {
-            int contador = 0;
-            foreach(SolicitudMantenimiento sm in SolicitudesDeMantenimiento)
-            {
-                if (sm.EsDePeriodo(inicioPeriodo, finPeriodo))
-                {
-                    contador++;
-                }
-            }
-            return contador;
-        }
-
-        public void CrearSM()
-        {
-
-        }
-
-        public void EsSMDeProyecto()
-        {
-
-        }
-
-        /// 
-        /// <param name="fechaActual"></param>
-        public void RegistrarResolucionSM(DateTime fechaActual)
-        {
-
-        }
-
-        public void SoyProyectoSegunFiltros()
-        {
-
-        }
-
-        public void VerificarEstadoDeSM()
-        {
-
-        }
-
     }
 }
 //end Proyecto

@@ -6,7 +6,7 @@ namespace RealizacionCU22
 {
     public class ProjectContext : DbContext
     {
-        public ProjectContext() : base("db_poloc")
+        public ProjectContext() : base("local_mok")
         {
 
         }

@@ -54,57 +54,9 @@ namespace RealizacionCU22.Modelo
             return null;
         }
 
-        public void Anular()
+        public bool EsCerrada()
         {
-
-        }
-
-        public void CalcularCantidadTiempoResolucion()
-        {
-
-        }
-
-        public void CalcularCostoSolucion()
-        {
-
-        }
-
-        public void Cancelar()
-        {
-
-        }
-
-        public void Cerrar()
-        {
-
-        }
-
-        public void Confirmar()
-        {
-
-        }
-
-        public void CuantificarRecursos()
-        {
-
-        }
-
-        public void EsCerrada()
-        {
-
-        }
-
-        public bool EsDePeriodo(DateTime inicioPeriodo, DateTime finPeriodo)
-        {
-            Random rand = new Random();
-            if (rand.Next(0, 100) < 50)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return EstadoActual.EsCerrada();
         }
 
         public bool EsSMEnEjecucion()
@@ -112,81 +64,14 @@ namespace RealizacionCU22.Modelo
             return EstadoActual.EsEnEjecucion();
         }
 
-        public void EstaResuelta()
+        public bool EstaResuelta()
         {
-
+            return EstadoActual.EsResuelta();
         }
 
-        public void Estimar()
-        {
-
-        }
-
-        public void IniciarResolucion()
-        {
-
-        }
-
-        public void Notificar()
-        {
-
-        }
-
-        public void ObtenerDatosSM()
-        {
-
-        }
-
-        public void Planificar()
-        {
-
-        }
-
-        public void Rechazar()
-        {
-
-        }
-
-        public void Reclamar()
-        {
-
-        }
-
-        public void RegistrarSolucionImplementada()
-        {
-
-        }
-
-        public void Replanificar()
-        {
-
-        }
-
-        /// 
-        /// <param name="fechaActual"></param>
         public void Resolver()
         {
             EstadoActual.RegistrarResolucion(this);
-        }
-
-        public void SoySolicitudSegunFiltros()
-        {
-
-        }
-
-        public void SumarizarCantidadTickets()
-        {
-
-        }
-
-        public void SumarizarCosto()
-        {
-
-        }
-
-        public void SumarizarHorasConsumidas()
-        {
-
         }
 
     }

@@ -44,7 +44,7 @@ namespace RealizacionCU22.Modelo
 
         public bool EsVigente()
         {
-            return FechaHoraHasta != null;
+            return FechaHoraHasta.HasValue;
         }
     }
 }

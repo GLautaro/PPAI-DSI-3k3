@@ -15,7 +15,7 @@ namespace RealizacionCU22.Modelo
 
         public Resuelta()
         {
-            this.Nombre = this.GetType().ToString();
+            this.Nombre = "Resuelta";
         }
         public new bool EsResuelta()
         {

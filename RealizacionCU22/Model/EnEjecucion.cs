@@ -16,7 +16,7 @@ namespace RealizacionCU22.Modelo
 
         public EnEjecucion()
         {
-            this.Nombre = this.GetType().ToString();
+            this.Nombre = "En Ejecucion";
         }
                
         public new bool EsEnEjecucion()
@@ -25,20 +25,24 @@ namespace RealizacionCU22.Modelo
         }
 
         
-        public new void RegistrarResolucion(SolicitudMantenimiento sm)
+        public override void RegistrarResolucion(SolicitudMantenimiento sm)
         {
             var viejo = sm.UltimoHistorial();
-            if(viejo != null)
-            {
-                viejo.FechaHoraHasta = DateTime.Now;
-                sm.EstadoActual = new Resuelta();
+            if (viejo == null)
+                viejo = new HistorialEstadoSM();
 
-                HistorialEstadoSM nuevo = new HistorialEstadoSM();
-                nuevo.FechaHoraDesde = DateTime.Now;
-                nuevo.Estado = new Resuelta();
-                sm.HistorialesEstadoSM.Add(nuevo);
-            }
-            throw new InvalidOperationException("El modelo no es valido");
+
+            viejo.FechaHoraDesde = DateTime.Now;
+            viejo.FechaHoraHasta = DateTime.Now;
+            viejo.Estado = sm.EstadoActual;
+
+            sm.EstadoActual = new Resuelta();
+
+            HistorialEstadoSM nuevo = new HistorialEstadoSM();
+            nuevo.FechaHoraDesde = DateTime.Now;
+            nuevo.Estado = new Resuelta();
+            sm.HistorialesEstadoSM.Add(nuevo);
+            
         }
 
     }

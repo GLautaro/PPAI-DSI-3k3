@@ -11,7 +11,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace RealizacionCU22.Modelo
 {
     [Table("estado_solicitud_mantenimiento")]
-    public class EstadoSM : IObjetoPersistente
+    public abstract class EstadoSM : IObjetoPersistente
     {
 
         [Key]
@@ -23,74 +23,73 @@ namespace RealizacionCU22.Modelo
 
         }
 
-        public bool EsAnulada()
+        public virtual bool EsAnulada()
         {
 
             return false;
         }
 
-        public bool EsCancelada()
+        public virtual bool EsCancelada()
         {
 
             return false;
         }
 
-        public bool EsCerrada()
+        public virtual bool EsCerrada()
         {
 
             return false;
         }
 
-        public bool EsConfirmada()
+        public virtual bool EsConfirmada()
         {
 
             return false;
         }
 
-        public bool EsEnEjecucion()
+        public virtual bool EsEnEjecucion()
+        {
+            return false;
+        }
+
+        public virtual bool EsEstimada()
         {
 
             return false;
         }
 
-        public bool EsEstimada()
+        public virtual bool EsGenerada()
         {
 
             return false;
         }
 
-        public bool EsGenerada()
+        public virtual bool EsNotificada()
         {
 
             return false;
         }
 
-        public bool EsNotificada()
+        public virtual bool EsPlanificada()
         {
 
             return false;
         }
 
-        public bool EsPlanificada()
+        public virtual bool EsReclamada()
         {
 
             return false;
         }
 
-        public bool EsReclamada()
+        public virtual bool EsResuelta()
         {
 
             return false;
         }
-
-        public bool EsResuelta()
+        public virtual void RegistrarResolucion(SolicitudMantenimiento sm)
         {
 
-            return false;
-        }
-        public void RegistrarResolucion(SolicitudMantenimiento sm)
-        {
-            return;
         }
 
     }
