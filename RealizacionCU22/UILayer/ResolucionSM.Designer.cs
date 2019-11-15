@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainPantallaResolucionSM));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -42,6 +43,17 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabsResultadoBusqueda = new MetroFramework.Controls.MetroTabControl();
             this.tabSM = new MetroFramework.Controls.MetroTabPage();
+            this.txtDescripcion = new MetroFramework.Controls.MetroLabel();
+            this.txtUsuarioSolicitante = new MetroFramework.Controls.MetroLabel();
+            this.txtCriticidad = new MetroFramework.Controls.MetroLabel();
+            this.txtTipoSolicitud = new MetroFramework.Controls.MetroLabel();
+            this.txtHoraRegistro = new MetroFramework.Controls.MetroLabel();
+            this.txtFechaRegistro = new MetroFramework.Controls.MetroLabel();
+            this.txtVersionAplicacion = new MetroFramework.Controls.MetroLabel();
+            this.txtNombreAplicacion = new MetroFramework.Controls.MetroLabel();
+            this.txtFechaNecesidad = new MetroFramework.Controls.MetroLabel();
+            this.txtNombreEmpresa = new MetroFramework.Controls.MetroLabel();
+            this.txtNombreProyecto = new MetroFramework.Controls.MetroLabel();
             this.btnResolverSM = new MetroFramework.Controls.MetroButton();
             this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
@@ -55,13 +67,11 @@
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.lblTitleNombreProyecto = new MetroFramework.Controls.MetroLabel();
             this.tabPlan = new MetroFramework.Controls.MetroTabPage();
+            this.txtHoraFinPlan = new MetroFramework.Controls.MetroLabel();
+            this.txtHoraInicioPlan = new MetroFramework.Controls.MetroLabel();
+            this.txtFechaFinPlan = new MetroFramework.Controls.MetroLabel();
             this.btnDatosTicket = new MetroFramework.Controls.MetroButton();
             this.gridTicketsPlan = new MetroFramework.Controls.MetroGrid();
-            this.seleccionada = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tarea = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.miembro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horasConsumidas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroLabel15 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel14 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
@@ -69,29 +79,22 @@
             this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
             this.tabTickets = new MetroFramework.Controls.MetroTabPage();
             this.gridTicketsSeleccionados = new MetroFramework.Controls.MetroGrid();
+            this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
+            this.txtFechaInicioPlan = new MetroFramework.Controls.MetroLabel();
+            this.ticketViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ticketBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.seleccionada = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tarea = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MiembroAsignado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HorasConsumidas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idTicket = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaFinPrevista = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horasEstimadas = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horasConsumidasTkt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comentarios = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.metroLabel16 = new MetroFramework.Controls.MetroLabel();
-            this.txtNombreProyecto = new MetroFramework.Controls.MetroLabel();
-            this.txtNombreEmpresa = new MetroFramework.Controls.MetroLabel();
-            this.txtFechaNecesidad = new MetroFramework.Controls.MetroLabel();
-            this.txtNombreAplicacion = new MetroFramework.Controls.MetroLabel();
-            this.txtVersionAplicacion = new MetroFramework.Controls.MetroLabel();
-            this.txtFechaRegistro = new MetroFramework.Controls.MetroLabel();
-            this.txtHoraRegistro = new MetroFramework.Controls.MetroLabel();
-            this.txtTipoSolicitud = new MetroFramework.Controls.MetroLabel();
-            this.txtCriticidad = new MetroFramework.Controls.MetroLabel();
-            this.txtUsuarioSolicitante = new MetroFramework.Controls.MetroLabel();
-            this.txtDescripcion = new MetroFramework.Controls.MetroLabel();
-            this.txtFechaInicioPlan = new MetroFramework.Controls.MetroLabel();
-            this.txtFechaFinPlan = new MetroFramework.Controls.MetroLabel();
-            this.txtHoraInicioPlan = new MetroFramework.Controls.MetroLabel();
-            this.txtHoraFinPlan = new MetroFramework.Controls.MetroLabel();
+            this.selectedTicketViewModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.imgPoloc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabsResultadoBusqueda.SuspendLayout();
@@ -100,6 +103,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridTicketsPlan)).BeginInit();
             this.tabTickets.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridTicketsSeleccionados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ticketViewModelBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ticketBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectedTicketViewModelBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // txtNumeroSM
@@ -193,7 +199,7 @@
             this.tabsResultadoBusqueda.HotTrack = true;
             this.tabsResultadoBusqueda.Location = new System.Drawing.Point(20, 128);
             this.tabsResultadoBusqueda.Name = "tabsResultadoBusqueda";
-            this.tabsResultadoBusqueda.SelectedIndex = 0;
+            this.tabsResultadoBusqueda.SelectedIndex = 2;
             this.tabsResultadoBusqueda.Size = new System.Drawing.Size(967, 552);
             this.tabsResultadoBusqueda.Style = MetroFramework.MetroColorStyle.Green;
             this.tabsResultadoBusqueda.TabIndex = 5;
@@ -238,6 +244,109 @@
             this.tabSM.VerticalScrollbarBarColor = true;
             this.tabSM.VerticalScrollbarHighlightOnWheel = false;
             this.tabSM.VerticalScrollbarSize = 10;
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.AutoSize = true;
+            this.txtDescripcion.ForeColor = System.Drawing.Color.Black;
+            this.txtDescripcion.Location = new System.Drawing.Point(239, 436);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(419, 76);
+            this.txtDescripcion.TabIndex = 24;
+            this.txtDescripcion.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \r\nDonec molestie pellent" +
+    "esque pharetra. Nulla facilisi. Morbi vitae massa\r\npretium, elementum neque id, " +
+    "feugiat quam. Donec at ante felis. \r\n";
+            this.txtDescripcion.UseWaitCursor = true;
+            // 
+            // txtUsuarioSolicitante
+            // 
+            this.txtUsuarioSolicitante.AutoSize = true;
+            this.txtUsuarioSolicitante.Location = new System.Drawing.Point(239, 395);
+            this.txtUsuarioSolicitante.Name = "txtUsuarioSolicitante";
+            this.txtUsuarioSolicitante.Size = new System.Drawing.Size(62, 19);
+            this.txtUsuarioSolicitante.TabIndex = 23;
+            this.txtUsuarioSolicitante.Text = "Usuario 1";
+            // 
+            // txtCriticidad
+            // 
+            this.txtCriticidad.AutoSize = true;
+            this.txtCriticidad.Location = new System.Drawing.Point(239, 354);
+            this.txtCriticidad.Name = "txtCriticidad";
+            this.txtCriticidad.Size = new System.Drawing.Size(74, 19);
+            this.txtCriticidad.TabIndex = 22;
+            this.txtCriticidad.Text = "Criticidad 1";
+            // 
+            // txtTipoSolicitud
+            // 
+            this.txtTipoSolicitud.AutoSize = true;
+            this.txtTipoSolicitud.Location = new System.Drawing.Point(239, 313);
+            this.txtTipoSolicitud.Name = "txtTipoSolicitud";
+            this.txtTipoSolicitud.Size = new System.Drawing.Size(114, 19);
+            this.txtTipoSolicitud.TabIndex = 21;
+            this.txtTipoSolicitud.Text = "Tipo de solicitud 1";
+            // 
+            // txtHoraRegistro
+            // 
+            this.txtHoraRegistro.AutoSize = true;
+            this.txtHoraRegistro.Location = new System.Drawing.Point(239, 272);
+            this.txtHoraRegistro.Name = "txtHoraRegistro";
+            this.txtHoraRegistro.Size = new System.Drawing.Size(75, 19);
+            this.txtHoraRegistro.TabIndex = 20;
+            this.txtHoraRegistro.Text = "00/00/0000";
+            // 
+            // txtFechaRegistro
+            // 
+            this.txtFechaRegistro.AutoSize = true;
+            this.txtFechaRegistro.Location = new System.Drawing.Point(239, 231);
+            this.txtFechaRegistro.Name = "txtFechaRegistro";
+            this.txtFechaRegistro.Size = new System.Drawing.Size(75, 19);
+            this.txtFechaRegistro.TabIndex = 19;
+            this.txtFechaRegistro.Text = "00/00/0000";
+            // 
+            // txtVersionAplicacion
+            // 
+            this.txtVersionAplicacion.AutoSize = true;
+            this.txtVersionAplicacion.Location = new System.Drawing.Point(239, 190);
+            this.txtVersionAplicacion.Name = "txtVersionAplicacion";
+            this.txtVersionAplicacion.Size = new System.Drawing.Size(124, 19);
+            this.txtVersionAplicacion.TabIndex = 18;
+            this.txtVersionAplicacion.Text = "Version Aplicación 1";
+            // 
+            // txtNombreAplicacion
+            // 
+            this.txtNombreAplicacion.AutoSize = true;
+            this.txtNombreAplicacion.Location = new System.Drawing.Point(239, 149);
+            this.txtNombreAplicacion.Name = "txtNombreAplicacion";
+            this.txtNombreAplicacion.Size = new System.Drawing.Size(78, 19);
+            this.txtNombreAplicacion.TabIndex = 17;
+            this.txtNombreAplicacion.Text = "Aplicación 1";
+            // 
+            // txtFechaNecesidad
+            // 
+            this.txtFechaNecesidad.AutoSize = true;
+            this.txtFechaNecesidad.Location = new System.Drawing.Point(239, 108);
+            this.txtFechaNecesidad.Name = "txtFechaNecesidad";
+            this.txtFechaNecesidad.Size = new System.Drawing.Size(75, 19);
+            this.txtFechaNecesidad.TabIndex = 16;
+            this.txtFechaNecesidad.Text = "00/00/0000";
+            // 
+            // txtNombreEmpresa
+            // 
+            this.txtNombreEmpresa.AutoSize = true;
+            this.txtNombreEmpresa.Location = new System.Drawing.Point(239, 67);
+            this.txtNombreEmpresa.Name = "txtNombreEmpresa";
+            this.txtNombreEmpresa.Size = new System.Drawing.Size(69, 19);
+            this.txtNombreEmpresa.TabIndex = 15;
+            this.txtNombreEmpresa.Text = "Empresa 1";
+            // 
+            // txtNombreProyecto
+            // 
+            this.txtNombreProyecto.AutoSize = true;
+            this.txtNombreProyecto.Location = new System.Drawing.Point(239, 26);
+            this.txtNombreProyecto.Name = "txtNombreProyecto";
+            this.txtNombreProyecto.Size = new System.Drawing.Size(70, 19);
+            this.txtNombreProyecto.TabIndex = 14;
+            this.txtNombreProyecto.Text = "Proyecto 1";
             // 
             // btnResolverSM
             // 
@@ -318,7 +427,7 @@
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel4.Location = new System.Drawing.Point(25, 190);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(172, 19);
+            this.metroLabel4.Size = new System.Drawing.Size(171, 19);
             this.metroLabel4.TabIndex = 6;
             this.metroLabel4.Text = "Versión de la aplicación:";
             // 
@@ -364,10 +473,10 @@
             // 
             // tabPlan
             // 
+            this.tabPlan.Controls.Add(this.txtFechaInicioPlan);
             this.tabPlan.Controls.Add(this.txtHoraFinPlan);
             this.tabPlan.Controls.Add(this.txtHoraInicioPlan);
             this.tabPlan.Controls.Add(this.txtFechaFinPlan);
-            this.tabPlan.Controls.Add(this.txtFechaInicioPlan);
             this.tabPlan.Controls.Add(this.btnDatosTicket);
             this.tabPlan.Controls.Add(this.gridTicketsPlan);
             this.tabPlan.Controls.Add(this.metroLabel15);
@@ -389,6 +498,33 @@
             this.tabPlan.VerticalScrollbarHighlightOnWheel = false;
             this.tabPlan.VerticalScrollbarSize = 10;
             // 
+            // txtHoraFinPlan
+            // 
+            this.txtHoraFinPlan.AutoSize = true;
+            this.txtHoraFinPlan.Location = new System.Drawing.Point(248, 143);
+            this.txtHoraFinPlan.Name = "txtHoraFinPlan";
+            this.txtHoraFinPlan.Size = new System.Drawing.Size(40, 19);
+            this.txtHoraFinPlan.TabIndex = 13;
+            this.txtHoraFinPlan.Text = "00:00";
+            // 
+            // txtHoraInicioPlan
+            // 
+            this.txtHoraInicioPlan.AutoSize = true;
+            this.txtHoraInicioPlan.Location = new System.Drawing.Point(248, 65);
+            this.txtHoraInicioPlan.Name = "txtHoraInicioPlan";
+            this.txtHoraInicioPlan.Size = new System.Drawing.Size(40, 19);
+            this.txtHoraInicioPlan.TabIndex = 12;
+            this.txtHoraInicioPlan.Text = "00:00";
+            // 
+            // txtFechaFinPlan
+            // 
+            this.txtFechaFinPlan.AutoSize = true;
+            this.txtFechaFinPlan.Location = new System.Drawing.Point(248, 104);
+            this.txtFechaFinPlan.Name = "txtFechaFinPlan";
+            this.txtFechaFinPlan.Size = new System.Drawing.Size(75, 19);
+            this.txtFechaFinPlan.TabIndex = 11;
+            this.txtFechaFinPlan.Text = "00/00/0000";
+            // 
             // btnDatosTicket
             // 
             this.btnDatosTicket.Location = new System.Drawing.Point(769, 466);
@@ -403,6 +539,8 @@
             // 
             // gridTicketsPlan
             // 
+            this.gridTicketsPlan.AllowUserToAddRows = false;
+            this.gridTicketsPlan.AllowUserToDeleteRows = false;
             this.gridTicketsPlan.AllowUserToResizeRows = false;
             this.gridTicketsPlan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridTicketsPlan.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -421,10 +559,10 @@
             this.gridTicketsPlan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.gridTicketsPlan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.seleccionada,
-            this.id,
-            this.tarea,
-            this.miembro,
-            this.horasConsumidas});
+            this.Id,
+            this.Tarea,
+            this.MiembroAsignado,
+            this.HorasConsumidas});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -454,31 +592,6 @@
             this.gridTicketsPlan.Style = MetroFramework.MetroColorStyle.Green;
             this.gridTicketsPlan.TabIndex = 8;
             this.gridTicketsPlan.UseStyleColors = true;
-            // 
-            // seleccionada
-            // 
-            this.seleccionada.HeaderText = "Seleccionado";
-            this.seleccionada.Name = "seleccionada";
-            // 
-            // id
-            // 
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            // 
-            // tarea
-            // 
-            this.tarea.HeaderText = "Tarea";
-            this.tarea.Name = "tarea";
-            // 
-            // miembro
-            // 
-            this.miembro.HeaderText = "Miembro Asignado";
-            this.miembro.Name = "miembro";
-            // 
-            // horasConsumidas
-            // 
-            this.horasConsumidas.HeaderText = "Horas Consumidas";
-            this.horasConsumidas.Name = "horasConsumidas";
             // 
             // metroLabel15
             // 
@@ -542,7 +655,7 @@
             this.tabTickets.HorizontalScrollbarSize = 10;
             this.tabTickets.Location = new System.Drawing.Point(4, 44);
             this.tabTickets.Name = "tabTickets";
-            this.tabTickets.Size = new System.Drawing.Size(960, 504);
+            this.tabTickets.Size = new System.Drawing.Size(959, 504);
             this.tabTickets.TabIndex = 2;
             this.tabTickets.Text = "Tickets Asociados";
             this.tabTickets.ToolTipText = "Muestra los datos de los tickets asociados al plan de la solicitud de mantenimien" +
@@ -553,6 +666,8 @@
             // 
             // gridTicketsSeleccionados
             // 
+            this.gridTicketsSeleccionados.AllowUserToAddRows = false;
+            this.gridTicketsSeleccionados.AllowUserToDeleteRows = false;
             this.gridTicketsSeleccionados.AllowUserToResizeRows = false;
             this.gridTicketsSeleccionados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridTicketsSeleccionados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -575,8 +690,7 @@
             this.fechaFinPrevista,
             this.horasEstimadas,
             this.horasConsumidasTkt,
-            this.costo,
-            this.comentarios});
+            this.costo});
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -607,44 +721,6 @@
             this.gridTicketsSeleccionados.TabIndex = 9;
             this.gridTicketsSeleccionados.UseStyleColors = true;
             // 
-            // idTicket
-            // 
-            this.idTicket.HeaderText = "ID";
-            this.idTicket.Name = "idTicket";
-            // 
-            // fechaInicio
-            // 
-            this.fechaInicio.HeaderText = "Fecha de Inicio";
-            this.fechaInicio.Name = "fechaInicio";
-            // 
-            // fechaFinPrevista
-            // 
-            this.fechaFinPrevista.HeaderText = "Fecha de Fin Prevista";
-            this.fechaFinPrevista.Name = "fechaFinPrevista";
-            // 
-            // horasEstimadas
-            // 
-            this.horasEstimadas.HeaderText = "Horas Estimadas";
-            this.horasEstimadas.Name = "horasEstimadas";
-            // 
-            // horasConsumidasTkt
-            // 
-            this.horasConsumidasTkt.HeaderText = "Horas Consumidas";
-            this.horasConsumidasTkt.Name = "horasConsumidasTkt";
-            // 
-            // costo
-            // 
-            this.costo.HeaderText = "Costo";
-            this.costo.Name = "costo";
-            // 
-            // comentarios
-            // 
-            this.comentarios.HeaderText = "Comentarios";
-            this.comentarios.Name = "comentarios";
-            this.comentarios.Text = "Comentarios";
-            this.comentarios.ToolTipText = "Mostrar comentarios del ticket";
-            this.comentarios.UseColumnTextForButtonValue = true;
-            // 
             // metroLabel16
             // 
             this.metroLabel16.AutoSize = true;
@@ -658,144 +734,97 @@
             this.metroLabel16.Text = "Datos de Tickets Seleccionados:";
             this.metroLabel16.UseStyleColors = true;
             // 
-            // txtNombreProyecto
-            // 
-            this.txtNombreProyecto.AutoSize = true;
-            this.txtNombreProyecto.Location = new System.Drawing.Point(239, 26);
-            this.txtNombreProyecto.Name = "txtNombreProyecto";
-            this.txtNombreProyecto.Size = new System.Drawing.Size(72, 19);
-            this.txtNombreProyecto.TabIndex = 14;
-            this.txtNombreProyecto.Text = "Proyecto 1";
-            // 
-            // txtNombreEmpresa
-            // 
-            this.txtNombreEmpresa.AutoSize = true;
-            this.txtNombreEmpresa.Location = new System.Drawing.Point(239, 67);
-            this.txtNombreEmpresa.Name = "txtNombreEmpresa";
-            this.txtNombreEmpresa.Size = new System.Drawing.Size(71, 19);
-            this.txtNombreEmpresa.TabIndex = 15;
-            this.txtNombreEmpresa.Text = "Empresa 1";
-            // 
-            // txtFechaNecesidad
-            // 
-            this.txtFechaNecesidad.AutoSize = true;
-            this.txtFechaNecesidad.Location = new System.Drawing.Point(239, 108);
-            this.txtFechaNecesidad.Name = "txtFechaNecesidad";
-            this.txtFechaNecesidad.Size = new System.Drawing.Size(75, 19);
-            this.txtFechaNecesidad.TabIndex = 16;
-            this.txtFechaNecesidad.Text = "00/00/0000";
-            // 
-            // txtNombreAplicacion
-            // 
-            this.txtNombreAplicacion.AutoSize = true;
-            this.txtNombreAplicacion.Location = new System.Drawing.Point(239, 149);
-            this.txtNombreAplicacion.Name = "txtNombreAplicacion";
-            this.txtNombreAplicacion.Size = new System.Drawing.Size(80, 19);
-            this.txtNombreAplicacion.TabIndex = 17;
-            this.txtNombreAplicacion.Text = "Aplicación 1";
-            // 
-            // txtVersionAplicacion
-            // 
-            this.txtVersionAplicacion.AutoSize = true;
-            this.txtVersionAplicacion.Location = new System.Drawing.Point(239, 190);
-            this.txtVersionAplicacion.Name = "txtVersionAplicacion";
-            this.txtVersionAplicacion.Size = new System.Drawing.Size(127, 19);
-            this.txtVersionAplicacion.TabIndex = 18;
-            this.txtVersionAplicacion.Text = "Version Aplicación 1";
-            // 
-            // txtFechaRegistro
-            // 
-            this.txtFechaRegistro.AutoSize = true;
-            this.txtFechaRegistro.Location = new System.Drawing.Point(239, 231);
-            this.txtFechaRegistro.Name = "txtFechaRegistro";
-            this.txtFechaRegistro.Size = new System.Drawing.Size(75, 19);
-            this.txtFechaRegistro.TabIndex = 19;
-            this.txtFechaRegistro.Text = "00/00/0000";
-            // 
-            // txtHoraRegistro
-            // 
-            this.txtHoraRegistro.AutoSize = true;
-            this.txtHoraRegistro.Location = new System.Drawing.Point(239, 272);
-            this.txtHoraRegistro.Name = "txtHoraRegistro";
-            this.txtHoraRegistro.Size = new System.Drawing.Size(75, 19);
-            this.txtHoraRegistro.TabIndex = 20;
-            this.txtHoraRegistro.Text = "00/00/0000";
-            // 
-            // txtTipoSolicitud
-            // 
-            this.txtTipoSolicitud.AutoSize = true;
-            this.txtTipoSolicitud.Location = new System.Drawing.Point(239, 313);
-            this.txtTipoSolicitud.Name = "txtTipoSolicitud";
-            this.txtTipoSolicitud.Size = new System.Drawing.Size(116, 19);
-            this.txtTipoSolicitud.TabIndex = 21;
-            this.txtTipoSolicitud.Text = "Tipo de solicitud 1";
-            // 
-            // txtCriticidad
-            // 
-            this.txtCriticidad.AutoSize = true;
-            this.txtCriticidad.Location = new System.Drawing.Point(239, 354);
-            this.txtCriticidad.Name = "txtCriticidad";
-            this.txtCriticidad.Size = new System.Drawing.Size(76, 19);
-            this.txtCriticidad.TabIndex = 22;
-            this.txtCriticidad.Text = "Criticidad 1";
-            // 
-            // txtUsuarioSolicitante
-            // 
-            this.txtUsuarioSolicitante.AutoSize = true;
-            this.txtUsuarioSolicitante.Location = new System.Drawing.Point(239, 395);
-            this.txtUsuarioSolicitante.Name = "txtUsuarioSolicitante";
-            this.txtUsuarioSolicitante.Size = new System.Drawing.Size(64, 19);
-            this.txtUsuarioSolicitante.TabIndex = 23;
-            this.txtUsuarioSolicitante.Text = "Usuario 1";
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.AutoSize = true;
-            this.txtDescripcion.ForeColor = System.Drawing.Color.Black;
-            this.txtDescripcion.Location = new System.Drawing.Point(239, 436);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(419, 76);
-            this.txtDescripcion.TabIndex = 24;
-            this.txtDescripcion.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \r\nDonec molestie pellent" +
-    "esque pharetra. Nulla facilisi. Morbi vitae massa\r\npretium, elementum neque id, " +
-    "feugiat quam. Donec at ante felis. \r\n";
-            this.txtDescripcion.UseWaitCursor = true;
-            // 
             // txtFechaInicioPlan
             // 
             this.txtFechaInicioPlan.AutoSize = true;
             this.txtFechaInicioPlan.Location = new System.Drawing.Point(248, 26);
             this.txtFechaInicioPlan.Name = "txtFechaInicioPlan";
             this.txtFechaInicioPlan.Size = new System.Drawing.Size(75, 19);
-            this.txtFechaInicioPlan.TabIndex = 10;
+            this.txtFechaInicioPlan.TabIndex = 14;
             this.txtFechaInicioPlan.Text = "00/00/0000";
             // 
-            // txtFechaFinPlan
+            // ticketViewModelBindingSource
             // 
-            this.txtFechaFinPlan.AutoSize = true;
-            this.txtFechaFinPlan.Location = new System.Drawing.Point(248, 104);
-            this.txtFechaFinPlan.Name = "txtFechaFinPlan";
-            this.txtFechaFinPlan.Size = new System.Drawing.Size(75, 19);
-            this.txtFechaFinPlan.TabIndex = 11;
-            this.txtFechaFinPlan.Text = "00/00/0000";
+            this.ticketViewModelBindingSource.DataSource = typeof(RealizacionCU22.ModelView.TicketViewModel);
             // 
-            // txtHoraInicioPlan
+            // ticketBindingSource
             // 
-            this.txtHoraInicioPlan.AutoSize = true;
-            this.txtHoraInicioPlan.Location = new System.Drawing.Point(248, 65);
-            this.txtHoraInicioPlan.Name = "txtHoraInicioPlan";
-            this.txtHoraInicioPlan.Size = new System.Drawing.Size(40, 19);
-            this.txtHoraInicioPlan.TabIndex = 12;
-            this.txtHoraInicioPlan.Text = "00:00";
+            this.ticketBindingSource.DataSource = typeof(RealizacionCU22.Modelo.Ticket);
             // 
-            // txtHoraFinPlan
+            // seleccionada
             // 
-            this.txtHoraFinPlan.AutoSize = true;
-            this.txtHoraFinPlan.Location = new System.Drawing.Point(248, 143);
-            this.txtHoraFinPlan.Name = "txtHoraFinPlan";
-            this.txtHoraFinPlan.Size = new System.Drawing.Size(40, 19);
-            this.txtHoraFinPlan.TabIndex = 13;
-            this.txtHoraFinPlan.Text = "00:00";
+            this.seleccionada.FalseValue = "false";
+            this.seleccionada.HeaderText = "Seleccionado";
+            this.seleccionada.Name = "seleccionada";
+            this.seleccionada.TrueValue = "true";
+            // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            // 
+            // Tarea
+            // 
+            this.Tarea.DataPropertyName = "Tarea";
+            this.Tarea.HeaderText = "Tarea";
+            this.Tarea.Name = "Tarea";
+            this.Tarea.ReadOnly = true;
+            // 
+            // MiembroAsignado
+            // 
+            this.MiembroAsignado.DataPropertyName = "MiembroAsignado";
+            this.MiembroAsignado.HeaderText = "Miembro Asignado";
+            this.MiembroAsignado.Name = "MiembroAsignado";
+            this.MiembroAsignado.ReadOnly = true;
+            // 
+            // HorasConsumidas
+            // 
+            this.HorasConsumidas.DataPropertyName = "HorasConsumidas";
+            this.HorasConsumidas.HeaderText = "Horas Consumidas";
+            this.HorasConsumidas.Name = "HorasConsumidas";
+            this.HorasConsumidas.ReadOnly = true;
+            // 
+            // idTicket
+            // 
+            this.idTicket.DataPropertyName = "Id";
+            this.idTicket.HeaderText = "ID";
+            this.idTicket.Name = "idTicket";
+            // 
+            // fechaInicio
+            // 
+            this.fechaInicio.DataPropertyName = "FechaInicioReal";
+            this.fechaInicio.HeaderText = "Fecha de Inicio";
+            this.fechaInicio.Name = "fechaInicio";
+            // 
+            // fechaFinPrevista
+            // 
+            this.fechaFinPrevista.DataPropertyName = "FechaFinPrevista";
+            this.fechaFinPrevista.HeaderText = "Fecha de Fin Prevista";
+            this.fechaFinPrevista.Name = "fechaFinPrevista";
+            // 
+            // horasEstimadas
+            // 
+            this.horasEstimadas.DataPropertyName = "HorasEstimadas";
+            this.horasEstimadas.HeaderText = "Horas Estimadas";
+            this.horasEstimadas.Name = "horasEstimadas";
+            // 
+            // horasConsumidasTkt
+            // 
+            this.horasConsumidasTkt.DataPropertyName = "HorasConsumidas";
+            this.horasConsumidasTkt.HeaderText = "Horas Consumidas";
+            this.horasConsumidasTkt.Name = "horasConsumidasTkt";
+            // 
+            // costo
+            // 
+            this.costo.DataPropertyName = "Costo";
+            this.costo.HeaderText = "Costo";
+            this.costo.Name = "costo";
+            // 
+            // selectedTicketViewModelBindingSource
+            // 
+            this.selectedTicketViewModelBindingSource.DataSource = typeof(RealizacionCU22.ModelView.SelectedTicketViewModel);
             // 
             // mainPantallaResolucionSM
             // 
@@ -825,6 +854,9 @@
             this.tabTickets.ResumeLayout(false);
             this.tabTickets.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridTicketsSeleccionados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ticketViewModelBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ticketBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selectedTicketViewModelBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -858,21 +890,9 @@
         private MetroFramework.Controls.MetroLabel metroLabel11;
         private MetroFramework.Controls.MetroLabel metroLabel15;
         private MetroFramework.Controls.MetroGrid gridTicketsPlan;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn seleccionada;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tarea;
-        private System.Windows.Forms.DataGridViewTextBoxColumn miembro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn horasConsumidas;
         private MetroFramework.Controls.MetroButton btnDatosTicket;
         private MetroFramework.Controls.MetroLabel metroLabel16;
         private MetroFramework.Controls.MetroGrid gridTicketsSeleccionados;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idTicket;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaInicio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaFinPrevista;
-        private System.Windows.Forms.DataGridViewTextBoxColumn horasEstimadas;
-        private System.Windows.Forms.DataGridViewTextBoxColumn horasConsumidasTkt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn costo;
-        private System.Windows.Forms.DataGridViewButtonColumn comentarios;
         private MetroFramework.Controls.MetroLabel txtHoraRegistro;
         private MetroFramework.Controls.MetroLabel txtFechaRegistro;
         private MetroFramework.Controls.MetroLabel txtVersionAplicacion;
@@ -888,6 +908,20 @@
         private MetroFramework.Controls.MetroLabel txtHoraInicioPlan;
         private MetroFramework.Controls.MetroLabel txtFechaFinPlan;
         private MetroFramework.Controls.MetroLabel txtFechaInicioPlan;
+        private System.Windows.Forms.BindingSource ticketBindingSource;
+        private System.Windows.Forms.BindingSource ticketViewModelBindingSource;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn seleccionada;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tarea;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MiembroAsignado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HorasConsumidas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idTicket;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaInicio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaFinPrevista;
+        private System.Windows.Forms.DataGridViewTextBoxColumn horasEstimadas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn horasConsumidasTkt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn costo;
+        private System.Windows.Forms.BindingSource selectedTicketViewModelBindingSource;
     }
 }
 

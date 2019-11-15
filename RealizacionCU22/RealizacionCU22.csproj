@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,6 +12,8 @@
     <AssemblyName>RealizacionCU22</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +35,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
       <Private>True</Private>
@@ -45,6 +54,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -56,6 +66,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModelView\SelectedTicketViewModel.cs" />
+    <Compile Include="ModelView\TicketViewModel.cs" />
+    <Compile Include="Model\Anulada.cs" />
+    <Compile Include="Model\Aplicacion.cs" />
+    <Compile Include="Model\Archivo.cs" />
+    <Compile Include="Model\Cancelada.cs" />
+    <Compile Include="Model\Cerrada.cs" />
+    <Compile Include="Model\Cliente.cs" />
+    <Compile Include="Model\Comentario.cs" />
+    <Compile Include="Model\Confirmada.cs" />
+    <Compile Include="Model\CriticidadSM.cs" />
+    <Compile Include="Model\EnEjecucion.cs" />
+    <Compile Include="Model\EstadoSM.cs" />
+    <Compile Include="Model\EstadoTicket.cs" />
+    <Compile Include="Model\Estimada.cs" />
+    <Compile Include="Model\Generada.cs" />
+    <Compile Include="Model\HistorialEstadoSM.cs" />
+    <Compile Include="Model\HistorialEstadoTicket.cs" />
+    <Compile Include="Model\IObjetoPersistente.cs" />
+    <Compile Include="Model\JefeDeProyecto.cs" />
+    <Compile Include="Model\LiderProyecto.cs" />
+    <Compile Include="Model\MiembroEquipo.cs" />
+    <Compile Include="Model\Notificada.cs" />
+    <Compile Include="Model\Plan.cs" />
+    <Compile Include="Model\Planificada.cs" />
+    <Compile Include="Model\Proyecto.cs" />
+    <Compile Include="Model\Reclamada.cs" />
+    <Compile Include="Model\Resuelta.cs" />
+    <Compile Include="Model\Rol.cs" />
+    <Compile Include="Model\Sesion.cs" />
+    <Compile Include="Model\Solicitante.cs" />
+    <Compile Include="Model\SolicitudMantenimiento.cs" />
+    <Compile Include="Model\Tarea.cs" />
+    <Compile Include="Model\Ticket.cs" />
+    <Compile Include="Model\TipoDocumento.cs" />
+    <Compile Include="Model\TipoSM.cs" />
+    <Compile Include="Model\Usuario.cs" />
+    <Compile Include="Model\Version.cs" />
+    <Compile Include="ProjectContext.cs" />
     <Compile Include="UILayer\ResolucionSM.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +126,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\RealizacionCU22.ModelView.SelectedTicketViewModel.datasource" />
+    <None Include="Properties\DataSources\RealizacionCU22.ModelView.TicketViewModel.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -91,9 +142,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BusinessObjects\" />
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
